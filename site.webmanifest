@@ -1,0 +1,13 @@
+{
+  "name": "IMMO Akademie Portal",
+  "short_name": "IMMO",
+  "start_url": "/bildung-portal-demo/",
+  "scope": "/bildung-portal-demo/",
+  "display": "standalone",
+  "background_color": "#0b0f17",
+  "theme_color": "#4f8cff",
+  "icons": [
+    { "src": "/bildung-portal-demo/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "/bildung-portal-demo/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
