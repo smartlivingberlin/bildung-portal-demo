@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-# Crawling-Verzögerung optional:
-# Crawl-delay: 2
 Sitemap: https://smartlivingberlin.github.io/bildung-portal-demo/sitemap.xml
