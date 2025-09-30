@@ -1,1 +1,261 @@
-[HIER den kompletten großen index.html-Code aus dem Canvas „Masterplan Visitenkarte – …“ einfügen]
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IMMO Akademie – Visitenkarte (One-Pager)</title>
+<meta name="description" content="Weiterbildungen für Immobilien: §34c, Hausverwaltung, Gutachterwesen, §34i. Förderfähig (Bildungsgutschein)." />
+<style>
+  :root {
+    --bg:#0b0f17; --panel:#121826; --ink:#e6edf7; --muted:#98a2b3; --brand:#4f8cff; --ok:#22c55e; --warn:#f59e0b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#0f172a 50%,#0b1220 100%);color:var(--ink)}
+  a{color:var(--brand);text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px}
+  header{position:sticky;top:0;background:rgba(11,15,23,.7);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid #1f2937;z-index:10}
+  nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+  nav .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+  nav .brand .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#22d3ee);display:inline-block}
+  nav .links a{padding:10px 12px;border-radius:10px}
+  .cta{background:var(--brand);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600}
+  .hero{display:grid;gap:18px;grid-template-columns:1.2fr .8fr;align-items:center;padding:40px 0}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00));border:1px solid #1f2937;border-radius:18px;padding:18px}
+  h1{font-size:clamp(24px,3vw,38px);margin:6px 0}
+  h2{font-size:clamp(20px,2.4vw,30px);margin:8px 0 12px}
+  p.lead{color:var(--muted);font-size:1.05rem}
+  .badges{display:flex;gap:10px;flex-wrap:wrap}
+  .badge{border:1px solid #263040;background:#0e1524;border-radius:999px;padding:6px 10px;color:#cbd5e1;font-size:.9rem}
+  .grid{display:grid;gap:16px}
+  .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .kpi{display:flex;gap:12px;align-items:center}
+  .kpi .n{font-weight:800;font-size:24px}
+  .muted{color:var(--muted)}
+  .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid #253046;color:#cbd5e1;font-size:.8rem}
+  .module{display:flex;gap:12px}
+  .module .m-left{min-width:54px;height:54px;border-radius:12px;background:#0e1626;border:1px solid #273248;display:flex;align-items:center;justify-content:center;font-weight:700}
+  .module .m-body h3{margin:2px 0}
+  .timeline{position:relative;padding:10px 0}
+  .timeline .bar{height:10px;background:#0b162c;border:1px solid #22304a;border-radius:999px;overflow:hidden}
+  .timeline .fill{height:100%;background:linear-gradient(90deg,var(--brand),#22d3ee)}
+  footer{margin:40px 0 10px;color:#9aa3b2;font-size:.9rem}
+  .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid #24324b;background:#0f1a2e;color:#e5eef8;font-weight:600}
+  .btn.primary{background:var(--brand);border-color:#3f7be6;color:#fff}
+  .note{font-size:.9rem;color:#aab3c2}
+  .banner{margin:10px 0 6px;padding:10px 12px;border-radius:12px;border:1px solid #2a3a57;background:linear-gradient(180deg,#0f1b31,#0e1628);color:#e6edf7;font-weight:600}
+  .banner small{display:block;color:#a9b4c5;font-weight:500}
+</style>
+
+<!-- JSON-LD: Organization + Course -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IMMO Akademie (Portal)",
+  "url": "https://smartlivingberlin.github.io/bildung-portal-demo/",
+  "description": "Informationsportal zu modularen Weiterbildungen in der Immobilienwirtschaft (u. a. §34c, Hausverwaltung, Gutachterwesen, §34i).",
+  "sameAs": ["https://smartlivingberlin.github.io/bildung-portal-demo/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Immobilienmanager/in – modularer Lehrgang",
+  "description": "Fünf Module: Einführung, §34c Makler, Hausverwaltung, Gutachterwesen, §34i Immobiliardarlehen inkl. Prüfungsvorbereitung.",
+  "provider": {
+    "@type": "Organization",
+    "name": "IMMO Akademie (Portal)",
+    "url": "https://smartlivingberlin.github.io/bildung-portal-demo/"
+  }
+}
+</script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand"><span class="logo"></span> IMMO Akademie</div>
+        <div class="links">
+          <a href="#programm">Programm</a>
+          <a href="#module">Module</a>
+          <a href="#didaktik">Didaktik</a>
+          <a href="#dauer">Dauer</a>
+          <a href="#foerderung">Förderung</a>
+          <a href="#kontakt" class="cta">Jetzt beraten lassen</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <p class="pill">Visitenkarte • Portal-Masterplan</p>
+        <h1>Weiterbildungen für Immobilien – förderfähig & praxisnah</h1>
+        <div class="banner">Didaktisch fundiert, <strong>praxisnah mit Fallbeispielen</strong> – die <strong>beste Methodik</strong> für Quereinsteiger. Hoher Mehrwert für Lernende, Arbeitgeber und Arbeitsmarkt.<small>Storytelling • Kompetenzaufbau • Arbeitsproben • Job-Readiness</small></div>
+        <p class="lead">Modulare Qualifizierung zum/zur <strong>Immobilienmanager/in</strong>: §34c (Makler), Hausverwaltung, Gutachterwesen, §34i (Immobiliardarlehen). Buchbar einzeln oder als Gesamtpaket. Letztes Modul inkl. Prüfungsvorbereitung für die Sachkundeprüfung.</p>
+        <div class="badges">
+          <span class="badge">ATV/AZAV-fähig*</span>
+          <span class="badge">Bildungsgutschein</span>
+          <span class="badge">Online • Live & On-Demand</span>
+          <span class="badge">DE/EN</span>
+        </div>
+        <div style="height:12px"></div>
+        <div class="cta-row">
+          <a class="btn primary" href="#kontakt">Kostenlose Beratung</a>
+          <a class="btn" href="#programm">Programm ansehen</a>
+        </div>
+        <!-- Variantenschalter -->
+        <div class="cta-row" style="margin-top:8px">
+          <a class="btn" href="./">Portal (juristisch sicher)</a>
+          <a class="btn primary" href="./marketing.html">Showcase (Marketing)</a>
+        </div>
+        <p class="note" style="margin-top:10px">* Hinweis: Rechtliche Rahmenbedingungen je nach Trägerzulassung. Keine Rechtsberatung.</p>
+      </div>
+      <div class="grid cols-1">
+        <div class="card">
+          <h2 id="programm">Programmüberblick</h2>
+          <div class="grid cols-2">
+            <div class="kpi"><div class="n" id="kpi-total">11</div><div>Monate<br><span class="muted">Gesamtdauer</span></div></div>
+            <div class="kpi"><div class="n">5</div><div>Module<br><span class="muted">einzeln oder Paket</span></div></div>
+          </div>
+          <div style="height:10px"></div>
+          <div class="timeline">
+            <div class="bar"><div class="fill" id="tFill" style="width:0%"></div></div>
+            <p class="muted" id="tLabel">Zeitstrahl: 11 Monate (1 + 3 + 4 + 1 + 2*)</p>
+            <p class="note">* Modul 5: 1 Monat Lernen + 1 Monat Prüfungsvorbereitung (Sachkunde).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="didaktik">
+      <h2>Didaktik, Methodik & Qualität</h2>
+      <p>Unser Lehrkonzept basiert auf <strong>praxisnahen Fallbeispielen, Storytelling und den besten didaktischen Methoden</strong>. Ziel ist es, auch Quereinsteiger ohne Vorerfahrung im Immobilienbereich schnell und nachhaltig berufsfähig zu machen. Jede Lerneinheit ist so konzipiert, dass sie maximalen Mehrwert für Lernende und Arbeitgeber schafft.</p>
+      <ul>
+        <li><strong>Fallbeispiele & Use-Cases:</strong> Reale Szenarien wie Maklervertrag, WEG-Versammlung, Gutachten oder Darlehensfall.</li>
+        <li><strong>Praxisprojekte:</strong> Modulaufgaben liefern verwertbare Arbeitsproben für Bewerbungen.</li>
+        <li><strong>Kompetenzraster:</strong> Klar definierte Lernergebnisse (Wissen → Anwendung → Transfer).</li>
+        <li><strong>Storytelling:</strong> Inhalte werden mit narrativen Elementen vermittelt, um den Lerneffekt zu verstärken.</li>
+        <li><strong>Dozentenqualität:</strong> Erfahrene Fachdozenten, die didaktisch und methodisch auf höchstem Niveau arbeiten.</li>
+        <li><strong>Arbeitsmarkt-Bezug:</strong> Skills nachgefragt von Arbeitgebern (CRM, Rechtssicherheit, Kommunikation, KI-Tools).</li>
+        <li><strong>Assessment & Prüfung:</strong> Tests, Reflexion, Peer-Feedback; Abschluss: Sachkundeprüfungsvorbereitung (§34i).</li>
+        <li><strong>Portfolio:</strong> Alle Ergebnisse in einem digitalen Dossier – direkt nutzbar für Bewerbungen.</li>
+      </ul>
+      <p class="note">Hinweis: Keine Rechts- oder Steuerberatung. Verbindliche Anforderungen bitte mit zuständigen Stellen klären.</p>
+    </section>
+
+    <section class="card" id="module">
+      <h2>Module & Inhalte</h2>
+      <div class="grid cols-3" id="modules"></div>
+    </section>
+
+    <section class="card" id="dauer">
+      <h2>Dauer & Struktur</h2>
+      <ul id="durList" class="muted"></ul>
+      <p class="note">Die Module sind sequenziell planbar; Parallelisierung einzelner Lerneinheiten möglich (nach Beratung).</p>
+    </section>
+
+    <section class="card" id="karriere">
+      <h2>Karrierechancen & Einsatzbereiche</h2>
+      <p class="lead">Nach erfolgreichem Abschluss dieser Weiterbildung eröffnen sich vielfältige Einsatzmöglichkeiten …</p>
+      <div class="grid cols-2">
+        <div>
+          <ul>
+            <li><strong>Immobilienvermittlung (§34c):</strong> Kundenakquise, Exposés, Vertragsgestaltung.</li>
+            <li><strong>Hausverwaltung:</strong> Miet- und WEG-Verwaltung, Nebenkostenabrechnung, Instandhaltungsplanung.</li>
+            <li><strong>Gutachterwesen:</strong> Marktwertgutachten, Beleihungswert, Sachverständigentätigkeit.</li>
+            <li><strong>Baufinanzierung (§34i):</strong> Beratung, Tilgungspläne, Kreditwürdigkeits- und Nachkundenprüfung.</li>
+            <li><strong>Digitales Management:</strong> CRM-/ERP-Systeme.</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>🏢 Maklerbüros</li>
+            <li>🏠 Hausverwaltungen</li>
+            <li>🏦 Banken & Sparkassen</li>
+            <li>⚖️ Gutachterbüros</li>
+            <li>🏗️ Projektentwickler</li>
+            <li>🤝 Versicherungen & Finanzdienstleister</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Keine Rechts- oder Steuerberatung. Verbindliche Anforderungen mit zuständigen Stellen klären.</p>
+      <div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;">
+        <img src="https://source.unsplash.com/600x400/?real-estate,office" style="width:100%;border-radius:12px;object-fit:cover" alt="Immobilienvermittlung" loading="lazy"/>
+        <img src="https://source.unsplash.com/600x400/?architecture,building" style="width:100%;border-radius:12px;object-fit:cover" alt="Hausverwaltung" loading="lazy"/>
+        <img src="https://source.unsplash.com/600x400/?finance,bank" style="width:100%;border-radius:12px;object-fit:cover" alt="Baufinanzierung" loading="lazy"/>
+      </div>
+    </section>
+
+    <section class="card" id="foerderung">
+      <h2>Förderung & Formalien</h2>
+      <ul>
+        <li>Bildungsgutschein – förderfähig je nach Trägerzulassung.</li>
+        <li>ATV/AZAV-Kontext: Maßnahmenzulassung/Trägerzertifizierung.</li>
+        <li>Zertifikate je Modul; Gesamtzertifikat beim Paket.</li>
+      </ul>
+      <p class="note">Hinweis: Keine Rechts- oder Steuerberatung.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card" id="faq">
+      <h2>FAQ – Häufige Fragen</h2>
+      <details><summary>Ist die Weiterbildung förderfähig?</summary>
+        <p>Kann je nach Maßnahme/Trägerzulassung gegeben sein. Entscheidung durch die zuständige Stelle (z. B. Agentur für Arbeit/Jobcenter). Keine Zusage unsererseits.</p>
+      </details>
+      <details><summary>Garantiert die Weiterbildung einen Job?</summary>
+        <p>Nein. Die Weiterbildung stärkt Kompetenzen; Ergebnisse hängen von Person & Markt ab.</p>
+      </details>
+      <details><summary>Vorkenntnisse für Quereinsteiger?</summary>
+        <p>Nicht zwingend erforderlich – didaktischer Aufbau mit Fallbeispielen & Übungen.</p>
+      </details>
+      <details><summary>Wie lange dauern die Module?</summary>
+        <p>Gesamt 11 Monate: 1 + 3 + 4 + 1 + 2 (davon 1 Monat Prüfungsvorbereitung in M5).</p>
+      </details>
+    </section>
+
+    <section class="card" id="kontakt">
+      <h2>Beratung & Kontakt</h2>
+      <p class="muted">Kostenlose Erstberatung, individuelle Zeitplanung.</p>
+      <form onsubmit="event.preventDefault(); alert('Danke! Wir melden uns zeitnah.');">
+        <div class="grid cols-2">
+          <input required placeholder="Vorname" style="padding:12px;border-radius:10px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7" />
+          <input required placeholder="E-Mail" type="email" style="padding:12px;border-radius:10px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7" />
+        </div>
+        <div style="height:10px"></div>
+        <textarea placeholder="Ihr Anliegen" rows="4" style="width:100%;padding:12px;border-radius:12px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7"></textarea>
+        <div style="height:10px"></div>
+        <button class="btn primary" type="submit">Anfrage senden</button>
+      </form>
+    </section>
+
+    <footer>© 2025 IMMO Akademie • Impressum • Datenschutz • AGB</footer>
+  </main>
+
+<script>
+const modules = [
+  { id:1, title:"Einführung & Grundlagen", months:1, code:"M1", bullets:["Orientierung Immobilienwirtschaft","Rechtliche Rahmenbedingungen","Förderungen & Bildungsgutschein","Digitale Tools & LMS"]},
+  { id:2, title:"Immobilienmakler (§ 34c GewO)", months:3, code:"M2", bullets:["Erlaubnis, Pflichten, Gewerbeanmeldung","Maklervertrag, Widerruf, Exposé-Praxis","BGB-Basics, Verbraucherschutz","Lead-Prozesse & CRM"]},
+  { id:3, title:"Hausverwaltung & Immobilienmanagement", months:4, code:"M3", bullets:["WEG-Recht, Mietverwaltung","Nebenkosten & Instandhaltung","Facility-Management","Digitalisierung (ERP/CRM)"]},
+  { id:4, title:"Gutachter & Sachverständige (Gutachtenerstellung)", months:1, code:"M4", bullets:["Vergleichs-/Sach-/Ertragswert","Rechtliche Einschränkungen","DIN & Beleihungswert","Übungs-Gutachten"]},
+  { id:5, title:"Immobiliardarlehen (§ 34i GewO) + Prüfung", months:2, code:"M5", bullets:["1 Mo Lernen: Kreditarten, Kreditwürdigkeits- & Nachkundenprüfung","1 Mo Prüfungsvorbereitung: Sachkundeprüfung","Praxis: Tilgungsplan & Zinsrechner","Compliance & Dokumentation"]}
+];
+const grid = document.getElementById('modules');
+modules.forEach(m=>{
+  const el = document.createElement('div');
+  el.className = 'card module';
+  el.innerHTML = `<div class="m-left">${m.code}</div><div class="m-body"><h3>${m.title}</h3><p class="muted">Dauer: <strong>${m.months} Monat${m.months>1?'e':''}</strong></p><ul>${m.bullets.map(b=>`<li>${b}</li>`).join('')}</ul></div>`;
+  grid.appendChild(el);
+});
+const durList = document.getElementById('durList');
+let total = 0;
+modules.forEach(m=>{ total += m.months; const li = document.createElement('li'); li.textContent = `${m.code} – ${m.title}: ${m.months} Monat${m.months>1?'e':''}`; durList.appendChild(li); });
+document.getElementById('kpi-total').textContent = total;
+const fill = document.getElementById('tFill'); if (fill) fill.style.width = Math.min(100, (total/12)*100) + '%';
+</script>
+</body>
+</html>
