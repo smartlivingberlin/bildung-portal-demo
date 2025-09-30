@@ -1,153 +1,136 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>IMMO Akademie – Weiterbildungen (Portal)</title>
-<meta name="description" content="Praxisnahe Immobilien-Weiterbildungen: §34c, Hausverwaltung, Gutachterwesen, §34i. Modular, förderfähig, online.">
-<link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.css">
+<meta name="description" content="Praxisnahe Immobilien-Weiterbildungen: §34c, Hausverwaltung, Gutachterwesen, §34i. Modular, förderfähig, online." />
+<meta name="theme-color" content="#0b0f17" />
 <style>
-:root{--bg:#0b0f17;--panel:#121826;--ink:#e6edf7;--muted:#9aa3b2;--brand:#4f8cff}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#0f172a);color:var(--ink)}
-a{color:#9ec5ff;text-decoration:none}
-header{position:sticky;top:0;background:#111827dd;border-bottom:1px solid #1f2937}
-nav{max-width:1100px;margin:auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
-nav .right a{margin:0 8px}
-.toggle{border:1px solid #2a3550;border-radius:8px;padding:6px 10px;cursor:pointer}
-.wrap{max-width:1100px;margin:auto;padding:18px}
-.grid{display:grid;gap:16px}
-.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{background:#121826;border:1px solid #24324b;border-radius:14px;padding:16px}
-.card img{width:100%;border-radius:10px;margin-bottom:.5rem}
-.btn{display:inline-block;padding:10px 14px;background:var(--brand);color:#fff;border-radius:10px;margin-top:8px}
-.muted{color:var(--muted)}
-.footer{color:#aab3c2;font-size:.95rem;padding:24px 18px;border-top:1px solid #24324b}
-.badge{display:inline-block;border:1px solid #2a3550;border-radius:999px;padding:4px 10px;margin-right:6px;color:#cbd5e1}
-.note{font-size:.9rem;color:#aab3c2}
+:root{--bg:#0b0f17;--panel:#121826;--ink:#e6edf7;--muted:#98a2b3;--brand:#4f8cff;--ok:#22c55e}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#0b0f17;color:var(--ink)}
+a{color:var(--brand);text-decoration:none} .wrap{max-width:1100px;margin:0 auto;padding:24px}
+header{position:sticky;top:0;background:rgba(11,15,23,.75);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid #1f2937;z-index:10}
+nav{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:10px;align-items:center;font-weight:700}
+.logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),#22d3ee)}
+.lang{display:flex;gap:6px} .lang button{border:1px solid #253046;background:#0e1627;color:#dbe7fb;padding:6px 10px;border-radius:10px;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:center;padding:24px 0}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.00));border:1px solid #1f2c44;border-radius:16px;padding:16px}
+h1{font-size:clamp(22px,3vw,36px);margin:8px 0} h2{font-size:clamp(18px,2.2vw,28px);margin:8px 0 10px}
+.lead{color:var(--muted)} .grid{display:grid;gap:14px}
+.grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.btn{display:inline-flex;gap:8px;align-items:center;background:var(--brand);color:#fff;border:1px solid #3f7be6;padding:10px 14px;border-radius:12px;font-weight:600}
+.img{width:100%;border-radius:12px;border:1px solid #223049;background:#0f172a}
+.muted{color:var(--muted)} footer{margin:30px 0 10px;color:#9aa3b2;font-size:.9rem}
+.badge{display:inline-block;border:1px solid #263040;background:#0d1426;color:#cbd5e1;border-radius:999px;padding:6px 10px;margin-right:6px}
 </style>
-<link rel="icon" href="/bildung-portal-demo/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/bildung-portal-demo/apple-touch-icon.png" sizes="180x180">
-<link rel="manifest" href="/bildung-portal-demo/site.webmanifest">
-<meta name="theme-color" content="#0b0f17">
 </head>
 <body>
-<header>
-  <nav>
-    <div><strong>IMMO Akademie</strong></div>
-    <div class="right">
-      <a href="#module" data-i18n="nav.modules">Module</a>
-      <a href="#didaktik" data-i18n="nav.didactics">Didaktik</a>
-      <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
-      <span class="toggle" id="langToggle">DE</span>
-    </div>
-  </nav>
-</header>
+<header><div class="wrap"><nav>
+  <div class="brand"><span class="logo"></span><span id="t_brand">IMMO Akademie</span></div>
+  <div class="lang">
+    <button id="b_de">DE</button>
+    <button id="b_en">EN</button>
+  </div>
+</nav></div></header>
 
 <main class="wrap">
+  <section class="hero">
+    <div class="card">
+      <p class="badge" id="t_badge">Förderfähig*</p>
+      <h1 id="t_h1">Praxistarke Weiterbildungen für Immobilien</h1>
+      <p class="lead" id="t_lead">§34c, Hausverwaltung, Gutachterwesen, §34i – modular, förderfähig, praxisnah.</p>
+      <div style="height:8px"></div>
+      <a class="btn" href="#kontakt" id="t_cta">Kostenlose Beratung</a>
+      <p class="muted" style="margin-top:8px" id="t_hint">* Hinweis: maßnahmen-/trägerabhängig. Keine Rechtsberatung.</p>
+    </div>
+    <div class="card"><img class="img" src="./img/hero.svg" alt="Hero"/></div>
+  </section>
+
   <section class="card">
-    <div class="badge">ATV/AZAV-fähig*</div>
-    <div class="badge">Online – live & on-demand</div>
-    <h1 data-i18n="hero.title">Praxistarke Weiterbildungen für Immobilien</h1>
-    <p class="muted" data-i18n="hero.text">§34c, Hausverwaltung, Gutachterwesen, §34i – modular, förderfähig, praxisnah.</p>
-    <a class="btn" href="#kontakt" data-i18n="hero.cta">Kostenlose Beratung</a>
-    <p class="note" style="margin-top:8px">*Hinweis: maßnahmen-/trägerabhängig. Keine Rechtsberatung.</p>
-  </section>
-
-  <section class="grid cols-3" id="module">
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?education,books" alt="Einführung">
-      <h3><i class="bi bi-lightbulb"></i> <span data-i18n="m1.title">M1 Einführung</span></h3>
-      <p class="muted" data-i18n="m1.text">Orientierung, Grundlagen, digitale Tools (1 Monat)</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?real-estate,house" alt="Makler">
-      <h3><i class="bi bi-building"></i> <span data-i18n="m2.title">M2 Makler §34c</span></h3>
-      <p class="muted" data-i18n="m2.text">Maklerrecht, Exposés, Verträge, CRM (3 Monate)</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?apartment,management" alt="Hausverwaltung">
-      <h3><i class="bi bi-tools"></i> <span data-i18n="m3.title">M3 Hausverwaltung</span></h3>
-      <p class="muted" data-i18n="m3.text">WEG, Miete, NK-Abrechnung, FM (4 Monate)</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?architecture,plans" alt="Gutachter">
-      <h3><i class="bi bi-rulers"></i> <span data-i18n="m4.title">M4 Gutachter</span></h3>
-      <p class="muted" data-i18n="m4.text">Bewertung, DIN/Beleihungswert, Übungs-Gutachten (1 Monat)</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?finance,money" alt="Finanzierung">
-      <h3><i class="bi bi-cash-stack"></i> <span data-i18n="m5.title">M5 Finanzierung §34i</span></h3>
-      <p class="muted" data-i18n="m5.text">1 Mo Lernen + 1 Mo Prüfungsvorbereitung (Sachkunde)</p>
+    <h2 id="t_mod">Module</h2>
+    <div class="grid cols-3">
+      <div class="card"><img class="img" src="./img/card1.svg" alt="Einführung"/><p><strong id="t_m1">Einführung</strong></p></div>
+      <div class="card"><img class="img" src="./img/card2.svg" alt="Makler §34c"/><p><strong id="t_m2">Makler (§34c)</strong></p></div>
+      <div class="card"><img class="img" src="./img/card3.svg" alt="Hausverwaltung"/><p><strong id="t_m3">Hausverwaltung</strong></p></div>
     </div>
   </section>
 
-  <section class="card" id="didaktik">
-    <h2 data-i18n="did.title">Didaktik & Qualität</h2>
-    <ul>
-      <li data-i18n="did.f1"><strong>Fallbeispiele:</strong> echte Use-Cases (Maklervertrag, WEG, Gutachten, Darlehen).</li>
-      <li data-i18n="did.f2"><strong>Praxisprojekte:</strong> Arbeitsproben fürs Portfolio.</li>
-      <li data-i18n="did.f3"><strong>Kompetenzraster:</strong> Wissen → Anwendung → Transfer.</li>
-      <li data-i18n="did.f4"><strong>Dozentenqualität:</strong> erfahren & didaktisch stark.</li>
-      <li data-i18n="did.f5"><strong>Arbeitsmarktbezug:</strong> CRM, Rechtssicherheit, Kommunikation, KI-Tools.</li>
+  <section class="card">
+    <h2 id="t_did">Didaktik & Qualität</h2>
+    <ul class="muted" id="t_did_list">
+      <li>Fallbeispiele aus der Praxis, Storytelling, Arbeitsproben.</li>
+      <li>Kompetenzraster (Wissen → Anwendung → Transfer).</li>
+      <li>Dozenten mit Berufs- & Lehrpraxis.</li>
     </ul>
-    <p class="note">Keine Rechts-/Steuerberatung. Verbindliche Anforderungen bitte mit zuständigen Stellen klären.</p>
+  </section>
+
+  <section class="card">
+    <h2 id="t_nav">Weitere Seiten</h2>
+    <p><a href="./marketing.html" id="t_link_marketing">Marketing-Showcase</a> ·
+       <a href="./module.html" id="t_link_module">Modulübersicht</a> ·
+       <a href="./faq.html" id="t_link_faq">FAQ</a></p>
   </section>
 
   <section class="card" id="kontakt">
-    <h2 data-i18n="contact.title">Kontakt</h2>
-    <p class="muted" data-i18n="contact.text">Senden Sie uns eine E-Mail für eine kostenlose Erstberatung.</p>
-    <a class="btn" href="mailto:info@example.com" data-i18n="contact.cta">E-Mail senden</a>
+    <h2 id="t_contact">Beratung & Kontakt</h2>
+    <p class="muted" id="t_contact_lead">Individuelle Zeitplanung, Modul-Kombinationen, Firmenangebote.</p>
+    <p><a class="btn" href="mailto:info@example.com" id="t_mail">E-Mail senden</a></p>
   </section>
+
+  <footer>© 2025 IMMO Akademie • Impressum • Datenschutz • AGB</footer>
 </main>
 
-<footer class="footer wrap">
-  © 2025 IMMO Akademie • <a href="./impressum.html">Impressum</a> • <a href="./datenschutz.html">Datenschutz</a>
-</footer>
-
 <script>
-const dict={
-  de:{ "nav.modules":"Module","nav.didactics":"Didaktik","nav.contact":"Kontakt",
-       "hero.title":"Praxistarke Weiterbildungen für Immobilien",
-       "hero.text":"§34c, Hausverwaltung, Gutachterwesen, §34i – modular, förderfähig, praxisnah.",
-       "hero.cta":"Kostenlose Beratung",
-       "m1.title":"M1 Einführung","m1.text":"Orientierung, Grundlagen, digitale Tools (1 Monat)",
-       "m2.title":"M2 Makler §34c","m2.text":"Maklerrecht, Exposés, Verträge, CRM (3 Monate)",
-       "m3.title":"M3 Hausverwaltung","m3.text":"WEG, Miete, NK-Abrechnung, FM (4 Monate)",
-       "m4.title":"M4 Gutachter","m4.text":"Bewertung, DIN/Beleihungswert, Übungs-Gutachten (1 Monat)",
-       "m5.title":"M5 Finanzierung §34i","m5.text":"1 Mo Lernen + 1 Mo Prüfungsvorbereitung (Sachkunde)",
-       "did.title":"Didaktik & Qualität",
-       "did.f1":"Fallbeispiele: echte Use-Cases (Maklervertrag, WEG, Gutachten, Darlehen).",
-       "did.f2":"Praxisprojekte: Arbeitsproben fürs Portfolio.",
-       "did.f3":"Kompetenzraster: Wissen → Anwendung → Transfer.",
-       "did.f4":"Dozentenqualität: erfahren & didaktisch stark.",
-       "did.f5":"Arbeitsmarktbezug: CRM, Rechtssicherheit, Kommunikation, KI-Tools.",
-       "contact.title":"Kontakt","contact.text":"Senden Sie uns eine E-Mail für eine kostenlose Erstberatung.","contact.cta":"E-Mail senden"
-     },
-  en:{ "nav.modules":"Modules","nav.didactics":"Didactics","nav.contact":"Contact",
-       "hero.title":"Practical Real-Estate Training",
-       "hero.text":"§34c, Property Management, Valuation, §34i – modular, funded, practice-oriented.",
-       "hero.cta":"Free consultation",
-       "m1.title":"M1 Introduction","m1.text":"Orientation, fundamentals, digital tools (1 month)",
-       "m2.title":"M2 Broker §34c","m2.text":"Broker law, exposés, contracts, CRM (3 months)",
-       "m3.title":"M3 Property Management","m3.text":"HOA, rental, service charge settlement, FM (4 months)",
-       "m4.title":"M4 Valuation","m4.text":"Valuation, DIN/mortgage lending value (1 month)",
-       "m5.title":"M5 Financing §34i","m5.text":"1 mo learning + 1 mo exam prep",
-       "did.title":"Didactics & quality",
-       "did.f1":"Case studies: real use-cases (broker contract, HOA, valuation, loan).",
-       "did.f2":"Practice projects: portfolio-ready work samples.",
-       "did.f3":"Competency framework: knowledge → application → transfer.",
-       "did.f4":"Lecturer quality: experienced & didactically strong.",
-       "did.f5":"Labour-market focus: CRM, legal safety, communication, AI tools.",
-       "contact.title":"Contact","contact.text":"Send us an email for a free first consultation.","contact.cta":"Send email"
-     }
+const txt = {
+  de:{brand:"IMMO Akademie",badge:"Förderfähig*",h1:"Praxistarke Weiterbildungen für Immobilien",
+      lead:"§34c, Hausverwaltung, Gutachterwesen, §34i – modular, förderfähig, praxisnah.",
+      cta:"Kostenlose Beratung",hint:"* Hinweis: maßnahmen-/trägerabhängig. Keine Rechtsberatung.",
+      mod:"Module",m1:"Einführung",m2:"Makler (§34c)",m3:"Hausverwaltung",
+      did:"Didaktik & Qualität",
+      did_list:["Fallbeispiele aus der Praxis, Storytelling, Arbeitsproben.","Kompetenzraster (Wissen → Anwendung → Transfer).","Dozenten mit Berufs- & Lehrpraxis."],
+      nav:"Weitere Seiten",link_marketing:"Marketing-Showcase",link_module:"Modulübersicht",link_faq:"FAQ",
+      contact:"Beratung & Kontakt",contact_lead:"Individuelle Zeitplanung, Modul-Kombinationen, Firmenangebote.",
+      mail:"E-Mail senden"},
+  en:{brand:"IMMO Academy",badge:"Eligible for funding*",h1:"Practice-driven Real Estate Training",
+      lead:"§34c brokerage, property management, valuation, §34i mortgage – modular, job-ready.",
+      cta:"Free consultation",hint:"* Note: depends on provider/measure. No legal advice.",
+      mod:"Modules",m1:"Introduction",m2:"Broker (§34c)",m3:"Property Management",
+      did:"Didactics & Quality",
+      did_list:["Real-world cases, storytelling, work samples.","Competency grid (knowledge → application → transfer).","Lecturers with industry & teaching experience."],
+      nav:"More pages",link_marketing:"Marketing showcase",link_module:"Module overview",link_faq:"FAQ",
+      contact:"Advisory & contact",contact_lead:"Individual planning, module combinations, corporate offers.",
+      mail:"Send email"}
 };
-let lang="de";
-const toggle=document.getElementById("langToggle");
-toggle.addEventListener("click",()=>{
-  lang=(lang==="de"?"en":"de");
-  document.querySelectorAll("[data-i18n]").forEach(el=>{ el.textContent=dict[lang][el.dataset.i18n]||el.textContent; });
-  toggle.textContent=lang.toUpperCase();
-});
+function setLang(l){
+  const t=txt[l]; if(!t) return;
+  document.getElementById('t_brand').textContent=t.brand;
+  document.getElementById('t_badge').textContent=t.badge;
+  document.getElementById('t_h1').textContent=t.h1;
+  document.getElementById('t_lead').textContent=t.lead;
+  document.getElementById('t_cta').textContent=t.cta;
+  document.getElementById('t_hint').textContent=t.hint;
+  document.getElementById('t_mod').textContent=t.mod;
+  document.getElementById('t_m1').textContent=t.m1;
+  document.getElementById('t_m2').textContent=t.m2;
+  document.getElementById('t_m3').textContent=t.m3;
+  document.getElementById('t_did').textContent=t.did;
+  document.getElementById('t_did_list').innerHTML=t.did_list.map(li=>`<li>${li}</li>`).join('');
+  document.getElementById('t_nav').textContent=t.nav;
+  document.getElementById('t_link_marketing').textContent=t.link_marketing;
+  document.getElementById('t_link_module').textContent=t.link_module;
+  document.getElementById('t_link_faq').textContent=t.link_faq;
+  document.getElementById('t_contact').textContent=t.contact;
+  document.getElementById('t_contact_lead').textContent=t.contact_lead;
+  document.getElementById('t_mail').textContent=t.mail;
+  localStorage.setItem('lang', l);
+  document.documentElement.lang = l;
+}
+document.getElementById('b_de').onclick=()=>setLang('de');
+document.getElementById('b_en').onclick=()=>setLang('en');
+setLang(localStorage.getItem('lang') || 'de');
 </script>
 </body>
 </html>

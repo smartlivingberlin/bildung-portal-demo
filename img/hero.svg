@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#4f8cff"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs>
+  <rect width="1200" height="400" fill="#0b0f17"/>
+  <rect x="40" y="40" rx="24" width="1120" height="320" fill="url(#g)" opacity="0.15"/>
+  <text x="60" y="140" font-family="Arial,Helvetica,sans-serif" font-size="42" fill="#e6edf7" font-weight="700">
+    IMMO Akademie – Praxisstarke Weiterbildungen (förderfähig)
+  </text>
+  <text x="60" y="200" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#cbd5e1">
+    §34c Makler • Hausverwaltung • Gutachterwesen • §34i Immobiliardarlehen
+  </text>
+</svg>
