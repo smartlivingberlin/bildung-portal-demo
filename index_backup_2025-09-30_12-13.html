@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>IMMO Akademie – Weiterbildungen (Portal)</title>
+<meta name="description" content="Praxisnahe Immobilien-Weiterbildungen: §34c, Hausverwaltung, Gutachterwesen, §34i. Modular, förderfähig, online.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<style>
+:root{--bg:#0b0f17;--panel:#121826;--ink:#e6edf7;--muted:#9aa3b2;--brand:#4f8cff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#0f172a);color:var(--ink)}
+a{color:#9ec5ff;text-decoration:none}
+header{position:sticky;top:0;background:#111827dd;border-bottom:1px solid #1f2937}
+nav{max-width:1100px;margin:auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+nav .right a{margin:0 8px}
+.toggle{border:1px solid #2a3550;border-radius:8px;padding:6px 10px;cursor:pointer}
+.wrap{max-width:1100px;margin:auto;padding:18px}
+.grid{display:grid;gap:16px}
+.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#121826;border:1px solid #24324b;border-radius:14px;padding:16px}
+.card img{width:100%;border-radius:10px;margin-bottom:.5rem}
+.btn{display:inline-block;padding:10px 14px;background:var(--brand);color:#fff;border-radius:10px;margin-top:8px}
+.muted{color:var(--muted)}
+.footer{color:#aab3c2;font-size:.95rem;padding:24px 18px;border-top:1px solid #24324b}
+.badge{display:inline-block;border:1px solid #2a3550;border-radius:999px;padding:4px 10px;margin-right:6px;color:#cbd5e1}
+.note{font-size:.9rem;color:#aab3c2}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div><strong>IMMO Akademie</strong></div>
+    <div class="right">
+      <a href="#module" data-i18n="nav.modules">Module</a>
+      <a href="#didaktik" data-i18n="nav.didactics">Didaktik</a>
+      <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      <span class="toggle" id="langToggle">DE</span>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <div class="badge">ATV/AZAV-fähig*</div>
+    <div class="badge">Online – live & on-demand</div>
+    <h1 data-i18n="hero.title">Praxistarke Weiterbildungen für Immobilien</h1>
+    <p class="muted" data-i18n="hero.text">§34c, Hausverwaltung, Gutachterwesen, §34i – modular, förderfähig, praxisnah.</p>
+    <a class="btn" href="#kontakt" data-i18n="hero.cta">Kostenlose Beratung</a>
+    <p class="note" style="margin-top:8px">*Hinweis: maßnahmen-/trägerabhängig. Keine Rechtsberatung.</p>
+  </section>
+
+  <section class="grid cols-3" id="module">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?education,books" alt="Einführung">
+      <h3><i class="bi bi-lightbulb"></i> <span data-i18n="m1.title">M1 Einführung</span></h3>
+      <p class="muted" data-i18n="m1.text">Orientierung, Grundlagen, digitale Tools (1 Monat)</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?real-estate,house" alt="Makler">
+      <h3><i class="bi bi-building"></i> <span data-i18n="m2.title">M2 Makler §34c</span></h3>
+      <p class="muted" data-i18n="m2.text">Maklerrecht, Exposés, Verträge, CRM (3 Monate)</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?apartment,management" alt="Hausverwaltung">
+      <h3><i class="bi bi-tools"></i> <span data-i18n="m3.title">M3 Hausverwaltung</span></h3>
+      <p class="muted" data-i18n="m3.text">WEG, Miete, NK-Abrechnung, FM (4 Monate)</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?architecture,plans" alt="Gutachter">
+      <h3><i class="bi bi-rulers"></i> <span data-i18n="m4.title">M4 Gutachter</span></h3>
+      <p class="muted" data-i18n="m4.text">Bewertung, DIN/Beleihungswert, Übungs-Gutachten (1 Monat)</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?finance,money" alt="Finanzierung">
+      <h3><i class="bi bi-cash-stack"></i> <span data-i18n="m5.title">M5 Finanzierung §34i</span></h3>
+      <p class="muted" data-i18n="m5.text">1 Mo Lernen + 1 Mo Prüfungsvorbereitung (Sachkunde)</p>
+    </div>
+  </section>
+
+  <section class="card" id="didaktik">
+    <h2 data-i18n="did.title">Didaktik & Qualität</h2>
+    <ul>
+      <li data-i18n="did.f1"><strong>Fallbeispiele:</strong> echte Use-Cases (Maklervertrag, WEG, Gutachten, Darlehen).</li>
+      <li data-i18n="did.f2"><strong>Praxisprojekte:</strong> Arbeitsproben fürs Portfolio.</li>
+      <li data-i18n="did.f3"><strong>Kompetenzraster:</strong> Wissen → Anwendung → Transfer.</li>
+      <li data-i18n="did.f4"><strong>Dozentenqualität:</strong> erfahren & didaktisch stark.</li>
+      <li data-i18n="did.f5"><strong>Arbeitsmarktbezug:</strong> CRM, Rechtssicherheit, Kommunikation, KI-Tools.</li>
+    </ul>
+    <p class="note">Keine Rechts-/Steuerberatung. Verbindliche Anforderungen bitte mit zuständigen Stellen klären.</p>
+  </section>
+
+  <section class="card" id="kontakt">
+    <h2 data-i18n="contact.title">Kontakt</h2>
+    <p class="muted" data-i18n="contact.text">Senden Sie uns eine E-Mail für eine kostenlose Erstberatung.</p>
+    <a class="btn" href="mailto:info@example.com" data-i18n="contact.cta">E-Mail senden</a>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  © 2025 IMMO Akademie • <a href="./impressum.html">Impressum</a> • <a href="./datenschutz.html">Datenschutz</a>
+</footer>
+
+<script>
+const dict={
+  de:{ "nav.modules":"Module","nav.didactics":"Didaktik","nav.contact":"Kontakt",
+       "hero.title":"Praxistarke Weiterbildungen für Immobilien",
+       "hero.text":"§34c, Hausverwaltung, Gutachterwesen, §34i – modular, förderfähig, praxisnah.",
+       "hero.cta":"Kostenlose Beratung",
+       "m1.title":"M1 Einführung","m1.text":"Orientierung, Grundlagen, digitale Tools (1 Monat)",
+       "m2.title":"M2 Makler §34c","m2.text":"Maklerrecht, Exposés, Verträge, CRM (3 Monate)",
+       "m3.title":"M3 Hausverwaltung","m3.text":"WEG, Miete, NK-Abrechnung, FM (4 Monate)",
+       "m4.title":"M4 Gutachter","m4.text":"Bewertung, DIN/Beleihungswert, Übungs-Gutachten (1 Monat)",
+       "m5.title":"M5 Finanzierung §34i","m5.text":"1 Mo Lernen + 1 Mo Prüfungsvorbereitung (Sachkunde)",
+       "did.title":"Didaktik & Qualität",
+       "did.f1":"Fallbeispiele: echte Use-Cases (Maklervertrag, WEG, Gutachten, Darlehen).",
+       "did.f2":"Praxisprojekte: Arbeitsproben fürs Portfolio.",
+       "did.f3":"Kompetenzraster: Wissen → Anwendung → Transfer.",
+       "did.f4":"Dozentenqualität: erfahren & didaktisch stark.",
+       "did.f5":"Arbeitsmarktbezug: CRM, Rechtssicherheit, Kommunikation, KI-Tools.",
+       "contact.title":"Kontakt","contact.text":"Senden Sie uns eine E-Mail für eine kostenlose Erstberatung.","contact.cta":"E-Mail senden"
+     },
+  en:{ "nav.modules":"Modules","nav.didactics":"Didactics","nav.contact":"Contact",
+       "hero.title":"Practical Real-Estate Training",
+       "hero.text":"§34c, Property Management, Valuation, §34i – modular, funded, practice-oriented.",
+       "hero.cta":"Free consultation",
+       "m1.title":"M1 Introduction","m1.text":"Orientation, fundamentals, digital tools (1 month)",
+       "m2.title":"M2 Broker §34c","m2.text":"Broker law, exposés, contracts, CRM (3 months)",
+       "m3.title":"M3 Property Management","m3.text":"HOA, rental, service charge settlement, FM (4 months)",
+       "m4.title":"M4 Valuation","m4.text":"Valuation, DIN/mortgage lending value (1 month)",
+       "m5.title":"M5 Financing §34i","m5.text":"1 mo learning + 1 mo exam prep",
+       "did.title":"Didactics & quality",
+       "did.f1":"Case studies: real use-cases (broker contract, HOA, valuation, loan).",
+       "did.f2":"Practice projects: portfolio-ready work samples.",
+       "did.f3":"Competency framework: knowledge → application → transfer.",
+       "did.f4":"Lecturer quality: experienced & didactically strong.",
+       "did.f5":"Labour-market focus: CRM, legal safety, communication, AI tools.",
+       "contact.title":"Contact","contact.text":"Send us an email for a free first consultation.","contact.cta":"Send email"
+     }
+};
+let lang="de";
+const toggle=document.getElementById("langToggle");
+toggle.addEventListener("click",()=>{
+  lang=(lang==="de"?"en":"de");
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ el.textContent=dict[lang][el.dataset.i18n]||el.textContent; });
+  toggle.textContent=lang.toUpperCase();
+});
+</script>
+</body>
+</html>

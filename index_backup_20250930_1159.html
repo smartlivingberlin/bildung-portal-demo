@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IMMO Akademie – Weiterbildungen</title>
+<meta name="description" content="Immobilien-Weiterbildungen §34c, Hausverwaltung, Gutachter, §34i – förderfähig, praxisnah, modular.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<style>
+body{margin:0;font-family:system-ui,Arial;background:#0b0f17;color:#e6edf7}
+header{position:sticky;top:0;background:#111827dd;padding:1rem;border-bottom:1px solid #222}
+nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+nav a{color:#e6edf7;margin:0 .5rem;text-decoration:none}
+.toggle{cursor:pointer;padding:.4rem .8rem;border:1px solid #2a3550;border-radius:8px}
+.wrap{max-width:1100px;margin:auto;padding:1.5rem}
+.grid{display:grid;gap:16px}
+.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#121826;border:1px solid #2a3550;border-radius:14px;padding:1rem}
+.card img{width:100%;border-radius:10px;margin-bottom:.5rem}
+.module h3{margin:.4rem 0}
+.muted{color:#9aa3b2}
+.btn{display:inline-block;margin-top:.8rem;padding:.6rem 1rem;background:#4f8cff;color:#fff;border-radius:8px;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div><strong>IMMO Akademie</strong></div>
+    <div>
+      <a href="#module" data-i18n="nav.modules">Module</a>
+      <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      <span class="toggle" id="langToggle">DE/EN</span>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="card" id="hero">
+    <h1 data-i18n="hero.title">Praxistarke Weiterbildungen für Immobilien</h1>
+    <p data-i18n="hero.text" class="muted">§34c, Hausverwaltung, Gutachter, §34i – modular, praxisnah, förderfähig.</p>
+    <a href="#kontakt" class="btn" data-i18n="hero.cta">Kostenlose Beratung</a>
+  </section>
+
+  <section class="grid cols-3" id="module">
+    <div class="card module">
+      <img src="https://source.unsplash.com/400x250/?education,books" alt="">
+      <h3><i class="bi bi-lightbulb"></i> <span data-i18n="m1.title">M1 Einführung</span></h3>
+      <p class="muted" data-i18n="m1.text">Orientierung, Grundlagen, Tools</p>
+    </div>
+    <div class="card module">
+      <img src="https://source.unsplash.com/400x250/?real-estate,house" alt="">
+      <h3><i class="bi bi-building"></i> <span data-i18n="m2.title">M2 Makler §34c</span></h3>
+      <p class="muted" data-i18n="m2.text">Maklerrecht, Exposés, Verträge</p>
+    </div>
+    <div class="card module">
+      <img src="https://source.unsplash.com/400x250/?apartment,management" alt="">
+      <h3><i class="bi bi-tools"></i> <span data-i18n="m3.title">M3 Hausverwaltung</span></h3>
+      <p class="muted" data-i18n="m3.text">WEG, Miete, NK-Abrechnung</p>
+    </div>
+    <div class="card module">
+      <img src="https://source.unsplash.com/400x250/?architecture,plans" alt="">
+      <h3><i class="bi bi-rulers"></i> <span data-i18n="m4.title">M4 Gutachter</span></h3>
+      <p class="muted" data-i18n="m4.text">Bewertung, Gutachten, Marktwerte</p>
+    </div>
+    <div class="card module">
+      <img src="https://source.unsplash.com/400x250/?finance,money" alt="">
+      <h3><i class="bi bi-cash-stack"></i> <span data-i18n="m5.title">M5 Finanzierung §34i</span></h3>
+      <p class="muted" data-i18n="m5.text">Darlehen, Prüfungsvorbereitung</p>
+    </div>
+  </section>
+
+  <section class="card" id="kontakt">
+    <h2 data-i18n="contact.title">Kontakt</h2>
+    <p class="muted" data-i18n="contact.text">Senden Sie uns eine E-Mail für Beratung.</p>
+    <a href="mailto:info@example.com" class="btn" data-i18n="contact.cta">E-Mail senden</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>© 2025 IMMO Akademie • <a href="./impressum.html">Impressum</a> • <a href="./datenschutz.html">Datenschutz</a></p>
+</footer>
+
+<script>
+// Sprachdaten
+const dict={
+  de:{
+    "nav.modules":"Module","nav.contact":"Kontakt",
+    "hero.title":"Praxistarke Weiterbildungen für Immobilien",
+    "hero.text":"§34c, Hausverwaltung, Gutachter, §34i – modular, praxisnah, förderfähig.",
+    "hero.cta":"Kostenlose Beratung",
+    "m1.title":"M1 Einführung","m1.text":"Orientierung, Grundlagen, Tools",
+    "m2.title":"M2 Makler §34c","m2.text":"Maklerrecht, Exposés, Verträge",
+    "m3.title":"M3 Hausverwaltung","m3.text":"WEG, Miete, NK-Abrechnung",
+    "m4.title":"M4 Gutachter","m4.text":"Bewertung, Gutachten, Marktwerte",
+    "m5.title":"M5 Finanzierung §34i","m5.text":"Darlehen, Prüfungsvorbereitung",
+    "contact.title":"Kontakt","contact.text":"Senden Sie uns eine E-Mail für Beratung.","contact.cta":"E-Mail senden"
+  },
+  en:{
+    "nav.modules":"Modules","nav.contact":"Contact",
+    "hero.title":"Practical Real Estate Training",
+    "hero.text":"§34c, Property Management, Valuation, §34i – modular, practice-oriented, eligible for funding.",
+    "hero.cta":"Free Consultation",
+    "m1.title":"M1 Introduction","m1.text":"Orientation, basics, tools",
+    "m2.title":"M2 Broker §34c","m2.text":"Broker law, exposés, contracts",
+    "m3.title":"M3 Property Management","m3.text":"HOA, rental, service charge settlement",
+    "m4.title":"M4 Valuation","m4.text":"Appraisals, reports, market value",
+    "m5.title":"M5 Financing §34i","m5.text":"Loans, exam preparation",
+    "contact.title":"Contact","contact.text":"Send us an e-mail for consultation.","contact.cta":"Send E-Mail"
+  }
+};
+let lang="de";
+const toggle=document.getElementById("langToggle");
+toggle.addEventListener("click",()=>{
+  lang=(lang==="de"?"en":"de");
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    el.textContent=dict[lang][el.dataset.i18n];
+  });
+  toggle.textContent=lang.toUpperCase();
+});
+</script>
+</body>
+</html>
