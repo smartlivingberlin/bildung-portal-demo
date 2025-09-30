@@ -218,20 +218,24 @@
       </details>
     </section>
 
-    <section class="card" id="kontakt">
-      <h2>Beratung & Kontakt</h2>
-      <p class="muted">Kostenlose Erstberatung, individuelle Zeitplanung.</p>
-      <form onsubmit="event.preventDefault(); alert('Danke! Wir melden uns zeitnah.');">
-        <div class="grid cols-2">
-          <input required placeholder="Vorname" style="padding:12px;border-radius:10px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7" />
-          <input required placeholder="E-Mail" type="email" style="padding:12px;border-radius:10px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7" />
-        </div>
-        <div style="height:10px"></div>
-        <textarea placeholder="Ihr Anliegen" rows="4" style="width:100%;padding:12px;border-radius:12px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7"></textarea>
-        <div style="height:10px"></div>
-        <button class="btn primary" type="submit">Anfrage senden</button>
-      </form>
-    </section>
+    
+<section class="card" id="kontakt">
+  <h2>Beratung & Kontakt</h2>
+  <p class="muted">Kostenlose Erstberatung, individuelle Zeitplanung, Modul-Kombinationen, Firmenangebote.</p>
+  <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST">
+    <div class="grid cols-2">
+      <input required name="first_name" placeholder="Vorname" style="padding:12px;border-radius:10px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7" />
+      <input required name="email" type="email" placeholder="E-Mail" style="padding:12px;border-radius:10px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7" />
+    </div>
+    <div style="height:10px"></div>
+    <textarea name="message" placeholder="Ihr Anliegen" rows="4" style="width:100%;padding:12px;border-radius:12px;border:1px solid #2a3550;background:#0d1629;color:#e6edf7"></textarea>
+    <input type="hidden" name="_subject" value="Neue Anfrage – IMMO Akademie">
+    <input type="hidden" name="_redirect" value="https://smartlivingberlin.github.io/bildung-portal-demo/thanks.html">
+    <div style="margin:10px 0 6px" class="note">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben zum Zweck der Kontaktaufnahme zu. <a href="#datenschutz">Datenschutz</a>.</div>
+    <button class="btn primary" type="submit">Anfrage senden</button>
+  </form>
+</section>
+
 
     <footer>© 2025 IMMO Akademie • Impressum • Datenschutz • AGB</footer>
   </main>
@@ -259,3 +263,19 @@ const fill = document.getElementById('tFill'); if (fill) fill.style.width = Math
 </script>
 </body>
 </html>
+<!-- JSON-LD: CourseInstance je Modul -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Immobilienmanager/in – Modulpfad",
+  "hasCourseInstance": [
+    { "@type": "CourseInstance", "name": "M1 Einführung & Grundlagen", "courseMode": "Online", "description": "1 Monat, Orientierung, Recht, Förderung, Digitale Tools" },
+    { "@type": "CourseInstance", "name": "M2 Immobilienmakler §34c", "courseMode": "Online", "description": "3 Monate, Maklerrecht, Vertrag, CRM, Verbraucherschutz" },
+    { "@type": "CourseInstance", "name": "M3 Hausverwaltung & Management", "courseMode": "Online", "description": "4 Monate, WEG, Miete, NK-Abrechnung, FM, ERP" },
+    { "@type": "CourseInstance", "name": "M4 Gutachter & Sachverständige", "courseMode": "Online", "description": "1 Monat, Bewertungsverfahren, DIN, Übungs-Gutachten" },
+    { "@type": "CourseInstance", "name": "M5 §34i Immobiliardarlehen + Prüfung", "courseMode": "Online", "description": "2 Monate, 1 Mo Lernen + 1 Mo Prüfungsvorbereitung" }
+  ],
+  "provider": { "@type": "Organization", "name": "IMMO Akademie (Portal)", "url": "https://smartlivingberlin.github.io/bildung-portal-demo/" }
+}
+</script>
