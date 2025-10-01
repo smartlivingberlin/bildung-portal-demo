@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0a0f18"/><text x="50%" y="57%" font-size="30" text-anchor="middle" fill="#e6edf7" font-family="Arial,Helvetica,sans-serif">IM</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <text x="50%" y="55%" font-size="28" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">IM</text>
+</svg>
