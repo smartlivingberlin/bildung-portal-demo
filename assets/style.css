@@ -1,10 +1,6 @@
-:root{
-  --bg:#0b1020; --panel:#0f172a; --soft:#18243b; --muted:#b8c2d9; --text:#e6edf7; --brand:#3b82f6;
-}
-.card h3 { display:flex; align-items:center; gap:10px; }
-.icon-24 { width:24px; height:24px; display:inline-block; vertical-align:middle }
-.pill { background:var(--soft); border:1px solid #223455; color:var(--muted); padding:6px 10px; border-radius:999px; font-size:12px }
-.btn { transition:transform .06s ease; }
-.btn:active { transform:translateY(1px) }
-.module-meta { color:var(--muted); font-size:13px }
-@media (max-width:900px){ .icon-24 { width:22px; height:22px } }
+:root{--bg:#0b1020;--panel:#0f172a;--soft:#18243b;--muted:#b8c2d9;--text:#e6edf7;--brand:#3b82f6}
+.card h3{display:flex;align-items:center;gap:10px}
+.icon-24{width:24px;height:24px;display:inline-block;vertical-align:middle}
+.pill{background:var(--soft);border:1px solid #223455;color:var(--muted);padding:6px 10px;border-radius:999px;font-size:12px}
+.btn{transition:transform .06s ease}.btn:active{transform:translateY(1px)}
+.module-meta{color:var(--muted);font-size:13px}
