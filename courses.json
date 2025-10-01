@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "ItemList",
+  "itemListElement": [
+    {"@type":"Course","name":"M1 Einführung","description":"Einführung in die Immobilienwirtschaft"},
+    {"@type":"Course","name":"M2 Makler (§34c)","description":"Makler-Praxis, Recht, Widerruf, Geldwäscheprävention"},
+    {"@type":"Course","name":"M3 Hausverwaltung","description":"WEG/Mietrecht, Organisation, Kommunikation"},
+    {"@type":"Course","name":"M4 Gutachter","description":"Vergleichs-, Ertrags-, Sachwertverfahren"},
+    {"@type":"Course","name":"M5 §34i + Prüfung","description":"Immobiliardarlehen, Compliance, Prüfungsfit"}
+  ]
+}

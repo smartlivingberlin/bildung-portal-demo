@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Organization",
+  "name": "IMMO Akademie",
+  "url": "https://smartlivingberlin.github.io/bildung-portal-demo/",
+  "logo": "https://smartlivingberlin.github.io/bildung-portal-demo/assets/img/logo.svg",
+  "sameAs": ["mailto:info@smartliving.berlin"]
+}
