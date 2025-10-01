@@ -1,0 +1,10 @@
+/* sanfte Bewegung & optisches Polish */
+.reveal{opacity:0; transform: translateY(14px); transition: opacity .5s ease, transform .6s ease}
+.reveal.in{opacity:1; transform:none}
+.btn{position:relative;overflow:hidden}
+.btn:after{content:"";position:absolute;inset:auto auto 0 0;width:0;height:2px;background:rgba(255,255,255,.6);transition:width .25s}
+.btn:hover:after{width:100%}
+.card:hover{box-shadow:0 6px 22px rgba(0,0,0,.25), inset 0 0 0 1px #243145; transform: translateY(-1px); transition:.25s}
+.pill{display:inline-block;background:#0d1426;border:1px solid #253253;color:#cbd5e1;padding:6px 10px;border-radius:999px;margin-bottom:8px}
+.iconbar{display:flex;gap:10px;flex-wrap:wrap}
+.iconbar img{width:40px;height:40px;border-radius:10px;border:1px solid #223049;background:#0f172a;padding:6px}

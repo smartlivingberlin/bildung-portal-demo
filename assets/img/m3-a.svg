@@ -1,6 +1,9 @@
-<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="360" height="200" rx="16" fill="#0f172a" stroke="#223049"/>
-  <rect x="28" y="50" rx="8" width="260" height="16" fill="#24385e"/>
-  <rect x="28" y="76" rx="8" width="220" height="14" fill="#24385e"/>
-  <circle cx="315" cy="145" r="14" fill="#3b82f6"/>
+<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+  <rect width="480" height="220" rx="16" fill="#0f172a"/>
+  <rect x="24" y="24" width="140" height="90" rx="12" fill="url(#g)"/>
+  <rect x="180" y="34" width="260" height="12" rx="6" fill="#223049"/>
+  <rect x="180" y="58" width="220" height="12" rx="6" fill="#223049"/>
+  <rect x="24" y="134" width="416" height="12" rx="6" fill="#223049"/>
+  <rect x="24" y="158" width="300" height="12" rx="6" fill="#223049"/>
 </svg>
