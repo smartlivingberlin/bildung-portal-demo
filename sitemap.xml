@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/</loc><priority>1.0</priority></url>
+  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/</loc></url>
   <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/m1.html</loc></url>
   <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/m2.html</loc></url>
   <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/m3.html</loc></url>
   <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/m4.html</loc></url>
   <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/m5.html</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/kontakt.html</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/en/</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/en/m1.html</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/en/m2.html</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/en/m3.html</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/en/m4.html</loc></url>
-  <url><loc>https://smartlivingberlin.github.io/bildung-portal-demo/en/m5.html</loc></url>
 </urlset>
