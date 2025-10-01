@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#121a2f"/></linearGradient></defs><rect width="1200" height="420" rx="18" fill="url(#g)"/><text x="50%" y="55%" text-anchor="middle" font-size="36" fill="#e6edf7" font-family="system-ui,Segoe UI,Roboto,Arial">IMMO Akademie · Praxisnahe Weiterbildungen</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#111a35"/></linearGradient></defs>
+  <rect width="1200" height="420" fill="url(#g)"/>
+  <g fill="none" stroke="#233151" stroke-width="2" opacity=".8">
+    <rect x="60" y="100" width="320" height="180" rx="16"/>
+    <rect x="440" y="100" width="320" height="180" rx="16"/>
+    <rect x="820" y="100" width="320" height="180" rx="16"/>
+  </g>
+  <text x="50%" y="330" fill="#e6edf7" font-size="36" text-anchor="middle" font-family="Arial,Helvetica,sans-serif">
+    IMMO Akademie · 5 Module · Online · Praxisnah
+  </text>
+</svg>
