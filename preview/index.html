@@ -4,54 +4,95 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>[PREVIEW] IMMO Akademie – Praxistarke Weiterbildungen</title>
+  <meta name="description" content="Vorschau des neuen Portals: 11 Monate online – Einführung, §34c, Hausverwaltung, Gutachter, §34i.">
   <link rel="stylesheet" href="../assets/css/enhance.css">
+  <style>
+    :root{--bg:#0b1020;--panel:#0f172a;--text:#e6edf7;--muted:#b8c2d9;--brand:#3b82f6}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:1150px;margin:28px auto;padding:0 18px}
+    .box{background:var(--panel);border-radius:18px;padding:22px;box-shadow:0 0 0 1px #122042 inset}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;text-decoration:none}
+    .hero{display:grid;gap:18px;grid-template-columns:1.1fr .9fr}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--panel);border-radius:16px;padding:18px;box-shadow:0 0 0 1px #122042 inset}
+    .meta{color:var(--muted);font-size:13px;margin:6px 0 10px}
+    .p{color:var(--muted)}
+    @media (max-width:900px){.hero,.grid{grid-template-columns:1fr}}
+    img.resp{width:100%;border-radius:14px;border:1px solid #223049;background:#0f172a}
+  </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="box" style="border:1px dashed #2b3a5c;margin-bottom:16px">
-    <strong>PREVIEW</strong> · Die Live-Seite bleibt unverändert.
-    <a class="btn" href="../">Zurück zur Startseite</a>
+  <!-- Hinweisleiste (Preview nur zusätzlich) -->
+  <div class="box reveal" style="display:flex;gap:12px;align-items:center;border:1px dashed #2b3a5c">
+    <strong>PREVIEW</strong>
+    <span class="p">Dies ist ein paralleler Entwurf. Die aktuelle Live-Startseite bleibt unverändert.</span>
+    <a class="btn" href="../">Zur Live-Startseite</a>
   </div>
 
-  <!-- Hero -->
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero reveal">
     <div class="box">
-      <h1>Praxistarke Weiterbildungen (online)</h1>
-      <p>Gesamtpfad: M1 Einführung → M2 §34c → M3 Hausverwaltung → M4 Gutachter → M5 §34i.</p>
+      <img src="../assets/img/m1-a.svg" alt="Logo" style="width:44px;height:44px;border-radius:10px">
+      <h1 style="margin:10px 0 12px">Praxistarke Weiterbildungen (online)</h1>
+      <p class="p">Gesamtpfad (11 Monate, online): <b>M1 Einführung</b> → <b>M2 §34c Makler</b> → <b>M3 Hausverwaltung</b> → <b>M4 Gutachter</b> → <b>M5 §34i + Prüfung</b>. Alle Module sind auch einzeln buchbar.</p>
+      <p><a class="btn" href="mailto:info@smartliving.berlin?subject=Beratung">Kostenlose Beratung</a></p>
     </div>
-    <div class="box" style="text-align:center">
-      <img src="../assets/img/hero_zoom.jpg" alt="Hero" style="width:100%;max-width:500px;border-radius:14px">
+    <div class="box" style="display:flex;align-items:center;justify-content:center">
+      <img class="resp" src="../assets/img/hero.svg" alt="Hero">
     </div>
   </section>
 
-  <!-- Unterrichtsformat -->
-  <section class="box" style="margin-top:16px">
-    <h2>Unser Unterrichtsformat</h2>
+  <!-- Module -->
+  <section class="box reveal" style="margin-top:16px">
+    <h2 style="margin:0 0 10px">Module (M1–M5)</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>M1 · Einführung</h3>
+        <div class="meta">ca. 1 Monat · Orientierung, Recht-Basics, Berufsbilder, Kommunikation</div>
+        <p><a class="btn" href="../m1.html">Details</a></p>
+      </article>
+      <article class="card"><h3>M2 · §34c Makler</h3><div class="meta">Maklervertrag, Widerruf, Exposé, Kommunikation, AML</div><p><a class="btn" href="../m2.html">Details</a></p></article>
+      <article class="card"><h3>M3 · Hausverwaltung</h3><div class="meta">WEG/Mietrecht, Organisation, Versammlungen, Kommunikation</div><p><a class="btn" href="../m3.html">Details</a></p></article>
+      <article class="card"><h3>M4 · Gutachter</h3><div class="meta">Vergleichs-, Ertrags-, Sachwert · Aufbau & Nachvollziehbarkeit</div><p><a class="btn" href="../m4.html">Details</a></p></article>
+      <article class="card"><h3>M5 · §34i + Prüfung</h3><div class="meta">Kreditarten, Bonität, Tilgungsplan, Compliance, Prüfungsfit</div><p><a class="btn" href="../m5.html">Details</a></p></article>
+    </div>
+  </section>
+
+  <!-- Online-Format -->
+  <section class="box reveal">
+    <h2>Unterrichtsformat (100% online)</h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center">
-      <img src="../assets/img/online_class.jpg" alt="Online-Unterricht" style="width:100%;border-radius:14px">
-      <ul>
-        <li>Live via Zoom & MS Teams</li>
-        <li>Übungen mit Mentimeter</li>
+      <img class="resp" src="../assets/img/online-class.svg" alt="Online-Unterricht">
+      <ul class="p" style="margin:0 0 0 18px">
+        <li>Live-Sessions via Zoom & MS Teams</li>
+        <li>Interaktive Übungen mit Mentimeter</li>
         <li>Digitale Whiteboards</li>
-        <li>Einsatz moderner KI-Tools</li>
+        <li>Ausgewählte KI-Tools</li>
       </ul>
     </div>
-    <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
-      <img src="../assets/img/training_online.png" alt="Training" style="height:60px">
-      <img src="../assets/img/online_tools.png" alt="Tools" style="height:60px">
+    <div class="iconbar" style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+      <img src="../assets/img/icon-zoom.svg" alt="Zoom" title="Zoom">
+      <img src="../assets/img/icon-teams.svg" alt="Teams" title="Teams">
+      <img src="../assets/img/icon-menti.svg" alt="Mentimeter" title="Mentimeter">
+      <img src="../assets/img/icon-whitebd.svg" alt="Whiteboards" title="Whiteboards">
+      <img src="../assets/img/icon-ai.svg" alt="KI-Tools" title="KI-Tools">
     </div>
   </section>
 
   <!-- Kontakt -->
-  <section class="box" style="margin-top:16px">
-    <h2>Kontakt</h2>
-    <p>info@smartliving.berlin</p>
+  <section class="box reveal" style="margin-top:16px">
+    <h2 style="margin:0 0 10px">Kontakt</h2>
+    <p class="p">E-Mail: <a class="btn" href="mailto:info@smartliving.berlin">info@smartliving.berlin</a></p>
+    <p class="p">Zur Live-Startseite: <a class="btn" href="../">Start</a></p>
   </section>
 
   <footer class="p" style="text-align:center;margin:14px 0;color:#9fb0cc">
-    © 2025 IMMO Akademie
+    © 2025 IMMO Akademie · <a href="../sitemap.xml" style="color:#9bbcff">Sitemap</a> · <a href="../robots.txt" style="color:#9bbcff">Robots</a>
   </footer>
 </div>
+
+<script src="../assets/js/enhance.js"></script>
 </body>
 </html>
