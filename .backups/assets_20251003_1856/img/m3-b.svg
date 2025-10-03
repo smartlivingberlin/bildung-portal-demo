@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="22" fill="#0f1624"/>
+  <rect x="70" y="70" width="500" height="220" rx="18" fill="#101a33" stroke="#233151"/>
+  <text x="50%" y="160" fill="#f59e0b" font-size="44" text-anchor="middle" font-family="Arial,Helvetica,sans-serif">M3</text>
+  <text x="50%" y="210" fill="#c7d3ee" font-size="20" text-anchor="middle" font-family="Arial,Helvetica,sans-serif">Haus- & WEG-Verwaltung</text>
+</svg>

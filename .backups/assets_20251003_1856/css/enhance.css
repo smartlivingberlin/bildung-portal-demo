@@ -1,0 +1,17 @@
+:root{--bg:#0b1020;--panel:#0f172a;--ink:#e6edf7;--muted:#b8c2d9;--brand:#3b82f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+.wrap{max-width:1150px;margin:28px auto;padding:0 18px}
+.box{background:var(--panel);border-radius:18px;padding:22px;box-shadow:0 0 0 1px #122042 inset}
+.hero{display:grid;gap:18px;grid-template-columns:1.1fr .9fr}
+.h1{font-size:clamp(26px,3.2vw,40px);margin:6px 0 12px}
+.p{color:var(--muted)}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;text-decoration:none}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(2,1fr);margin-top:20px}
+.card{background:var(--panel);border-radius:18px;padding:18px;box-shadow:0 0 0 1px #122042 inset;transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+.bul{margin:8px 0 10px;padding-left:18px}
+.iconbar img{width:40px;height:40px}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease, transform .5s ease}
+.reveal.is-in{opacity:1;transform:none}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}

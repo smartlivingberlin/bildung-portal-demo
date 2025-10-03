@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop stop-color="#13233f"/><stop offset="1" stop-color="#0b1427"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <g fill="none" stroke="#3b82f6" stroke-width="3" opacity=".35">
+    <rect x="70" y="90" rx="18" ry="18" width="380" height="240"/>
+    <rect x="480" y="120" rx="18" ry="18" width="280" height="180"/>
+    <rect x="800" y="160" rx="18" ry="18" width="330" height="220"/>
+  </g>
+  <g fill="#e6edf7">
+    <text x="80" y="420" style="font:700 54px system-ui">IMMO Akademie</text>
+    <text x="80" y="470" style="font:400 26px system-ui" fill="#c9d4ea">Praxistarke Weiterbildungen – 100% online</text>
+  </g>
+</svg>
