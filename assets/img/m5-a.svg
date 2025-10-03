@@ -1,9 +1,7 @@
-<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
-  <rect width="480" height="220" rx="16" fill="#0f172a"/>
-  <rect x="24" y="24" width="140" height="90" rx="12" fill="url(#g)"/>
-  <rect x="180" y="34" width="260" height="12" rx="6" fill="#223049"/>
-  <rect x="180" y="58" width="220" height="12" rx="6" fill="#223049"/>
-  <rect x="24" y="134" width="416" height="12" rx="6" fill="#223049"/>
-  <rect x="24" y="158" width="300" height="12" rx="6" fill="#223049"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0f172a"/>
+  <circle cx="670" cy="390" r="22" fill="#3b82f6"/>
+  <g fill="#1f2a44"><rect x="60" y="80" rx="14" width="680" height="140"/><rect x="60" y="250" rx="14" width="520" height="28"/><rect x="60" y="295" rx="14" width="460" height="24"/></g>
+  <text x="60" y="360" fill="#e6edf7" style="font:600 26px system-ui">Modul-Platzhalter</text>
+  <text x="60" y="395" fill="#a9b7d0" style="font:400 16px system-ui">Austauschbar durch echte Grafik/Fotos</text>
 </svg>
