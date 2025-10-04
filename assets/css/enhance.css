@@ -1,4 +1,4 @@
-.reveal{opacity:0;transform:translateY(8px);transition:opacity .5s ease,transform .5s ease}
+.reveal{opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s}
 .reveal.is-visible{opacity:1;transform:none}
 :root{--bg:#0b1020;--panel:#0f172a;--text:#e6edf7;--muted:#b8c2d9;--brand:#3b82f6}
 body{background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0}
