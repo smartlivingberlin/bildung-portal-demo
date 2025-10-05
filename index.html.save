@@ -1,0 +1,110 @@
+cd ~/bildung-portal-demo
+# Sicherstellen, dass wir im Repo-Root sind:
+test -f index.html || echo "Achtung: keine index.html im Root"
+
+# index.html öffnen & Inhalt einfügen (deinen Code oben):
+nano index.html
+
+git add index.html
+git commit -m "Neue Startseite: Online-Weiterbildungen mit Bildern"
+git pull --rebase
+git push
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMMO Akademie – Praxistarke Weiterbildungen</title>
+  <meta name="description" content="Gesamtpfad (online, 11 Monate): Einführung → §34c Makler → Hausverwaltung → Gutachter → §34i + Prüfung. Module einzeln buchbar.">
+  <link rel="stylesheet" href="./assets/css/enhance.css">
+  <meta property="og:title" content="IMMO Akademie – Praxistarke Weiterbildungen">
+  <meta property="og:description" content="Modular, praxisnah, 100% online mit Zoom, Teams, Mentimeter, Whiteboards & KI-Tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200">
+  <style>.hero-img{width:100%;max-width:520px;border-radius:14px}</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <div class="box">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=128&h=128&fit=crop" alt="Logo" style="width:44px;height:44px;border-radius:10px">
+      <h1 class="h1">Praxistarke Weiterbildungen (100% online)</h1>
+      <p class="p">Gesamtpfad (11 Monate): <strong>M1 Einführung</strong> → <strong>M2 §34c Makler</strong> → <strong>M3 Hausverwaltung</strong> → <strong>M4 Gutachter</strong> → <strong>M5 §34i + Prüfung</strong>. Alle Module auch einzeln buchbar.</p>
+      <p class="p"><a class="btn" href="mailto:info@smartliving.berlin?subject=Kostenlose%20Beratung">Kostenlose Beratung</a></p>
+    </div>
+    <div class="box" style="display:flex;align-items:center;justify-content:center">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1400" alt="Hero Immobilien/Schulung">
+    </div>
+  </section>
+
+  <!-- MODULE -->
+  <section class="box reveal" style="margin-top:16px">
+    <h2 style="margin:0 0 10px">Module (M1–M5)</h2>
+    <div class="grid">
+      <article class="card">
+        <img class="resp" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1000" alt="Einführung Immobilienwirtschaft">
+        <h3>M1 · Einführung</h3>
+        <div class="meta">Orientierung, Recht-Basics, Berufsbilder (ca. 1 Monat)</div>
+      </article>
+      <article class="card">
+        <img class="resp" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1000" alt="Makler §34c">
+        <h3>M2 · §34c Makler</h3>
+        <div class="meta">Maklervertrag, Widerruf, Exposé, AML</div>
+      </article>
+      <article class="card">
+        <img class="resp" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000" alt="Hausverwaltung">
+        <h3>M3 · Hausverwaltung</h3>
+        <div class="meta">WEG/Mietrecht, Organisation, Versammlungen</div>
+      </article>
+      <article class="card">
+        <img class="resp" src="https://images.unsplash.com/photo-1560520653-9e0e4c89f8b3?q=80&w=1000" alt="Gutachter">
+        <h3>M4 · Gutachter</h3>
+        <div class="meta">Vergleichs-, Ertrags-, Sachwert</div>
+      </article>
+      <article class="card">
+        <img class="resp" src="https://images.unsplash.com/photo-1560518883-3c2a5bc7be37?q=80&w=1000" alt="§34i & Prüfung">
+        <h3>M5 · §34i + Prüfung</h3>
+        <div class="meta">Kreditarten, Bonität, Tilgungsplan, Prüfungsfit</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ONLINE-FORMAT -->
+  <section class="box reveal">
+    <h2>Unser Unterrichtsformat</h2>
+    <p>Der gesamte Unterricht findet <strong>100% online</strong> statt. Live, interaktiv, praxisnah.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center">
+      <img class="resp" src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=1200" alt="Online-Unterricht (Videokonferenz)">
+      <ul class="bul">
+        <li>Live-Sessions mit <strong>Zoom</strong> & <strong>Microsoft Teams</strong></li>
+        <li>Interaktive Übungen mit <strong>Mentimeter</strong></li>
+        <li>Visuelle Zusammenarbeit über <strong>digitale Whiteboards</strong></li>
+        <li>Einsatz von <strong>KI-Tools</strong> für moderne Immobilienpraxis</li>
+      </ul>
+    </div>
+    <div class="iconbar" style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <img src="https://cdn.simpleicons.org/zoom/3b82f6" alt="Zoom">
+      <img src="https://cdn.simpleicons.org/microsoftteams/3b82f6" alt="Teams">
+      <img src="https://cdn.simpleicons.org/mentimeter/3b82f6" alt="Mentimeter">
+      <img src="https://cdn.simpleicons.org/miro/3b82f6" alt="Miro/Whiteboard">
+      <img src="https://cdn.simpleicons.org/openai/3b82f6" alt="KI-Tools">
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="box reveal" style="margin-top:16px">
+    <h2 style="margin:0 0 10px">Kontakt</h2>
+    <p class="p">Schreibe uns per E-Mail: <a class="btn" href="mailto:info@smartliving.berlin">info@smartliving.berlin</a></p>
+  </section>
+
+  <footer class="p" style="text-align:center;margin:14px 0;color:#9fb0cc">
+    © 2025 IMMO Akademie
+  </footer>
+</div>
+
+<script src="./assets/js/enhance.js"></script>
+</body>
+</html>
